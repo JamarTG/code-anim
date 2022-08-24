@@ -1,0 +1,120 @@
+body * {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+audio{
+    display: none;
+}
+
+#numbering{
+    padding: 10px;
+    line-height: 24px;
+}
+
+
+body{
+    background: linear-gradient(0.25turn, #cc2b5e , #753a88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pressed{
+    background-color: #cc2b5e;
+}
+.keyboard{
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 1px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 8px;
+}
+
+
+.key {
+    background-color: #353434;
+    border: 0px solid rgb(116, 114, 114);
+    box-shadow: 6px 6px 2px rgb(74, 76, 74) ;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 25px;
+    color: rgb(241, 234, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backspace{
+    grid-column: span 4;
+}
+
+.tab,.backslash {
+    grid-column: span 3;
+}
+
+.capslock, .enter {
+    grid-column: span 4;
+}
+
+.leftshift, .rightshift {
+    grid-column: span 5;
+}
+
+.leftctrl {
+    grid-column: span 3;
+}
+
+.space {
+    grid-column: span 13;
+}
+
+
+/* editor code */
+
+#editor{
+    background-color: black;
+    color: rgb(247, 251, 247);
+    height: 600px;
+    width: 1000px;
+    border-radius: 0px;
+    border: none;
+    font-size: 25px;
+    line-height: 34px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+}
+
+#editor:focus{
+    outline: none;
+    tab-size: 4;
+
+}
+
+#container{
+    display: flex;
+    /* border: 1px solid green; */
+    /* height: 500px; */
+    width: 1300px; 
+    background-color: black;
+}
+
+
+#numbering{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(241, 237, 237);
+    background-color: rgb(49, 50, 50);
+    height: 606px;
+    width: 90px;}
+
+
+.number-box{
+   padding: 5px;
+  
+}
